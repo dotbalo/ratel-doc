@@ -52,7 +52,7 @@
 
     [1.1 Ratel安装](https://github.com/dotbalo/ratel-doc/blob/master/cluster/Install.md)
     
-    [1.2 添加集群]((https://github.com/dotbalo/ratel-doc/blob/master/cluster/addCluster.md))
+    [1.2 添加集群](https://github.com/dotbalo/ratel-doc/blob/master/cluster/addCluster.md)
     
 2. 资源管理
     
