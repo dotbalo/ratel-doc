@@ -192,8 +192,12 @@
 
 ````
     ratel登录页如下:
-    
-    ratel首页如下:
-
-    PS: 前端模板下载于chinaz
 ````
+![login](https://github.com/dotbalo/ratel-doc/blob/master/images/login.png)
+
+````
+    ratel首页如下:
+````
+
+![index](https://github.com/dotbalo/ratel-doc/blob/master/images/index.png)
+
