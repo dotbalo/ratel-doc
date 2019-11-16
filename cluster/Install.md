@@ -1,4 +1,4 @@
-## 1. 安装ratel
+## 1. 安装Ratel
 
 ### 1.1 安装说明
 
@@ -26,6 +26,8 @@
         serverDashboardUrl: Kubernetes官方dashboard地址
         kubeConfigPath: Kubernetes kube.config路径(绝对路径)
     kubeConfigPath 通过secret挂载到容器的/mnt目录或者其他目录
+
+    本文档是将Ratel安装在Kubernetes集群，如果没有Kubernetes集群，可以参考本人写的另一篇文章，CentOS 8二进制高可用安装Kubernetes集群: https://www.cnblogs.com/dukuan/p/11780729.html
 ````
 
 ### 1.2 创建Secret
@@ -42,7 +44,7 @@
           production: 'false'
           kubeConfigPath: "/mnt/test1.config"
         - serverName: 'test2'
-          serverAddress: 'https://1.1.1.1:8443'
+          serverAddress: 'https://1.1.1.2:8443'
           #serverAdminUser: 'xxx'
           #serverAdminPassword: 'xxx#'
           serverAdminToken: 'null'
@@ -200,4 +202,40 @@
 ````
 
 ![index](https://github.com/dotbalo/ratel-doc/blob/master/images/index.png)
+![index2](https://github.com/dotbalo/ratel-doc/blob/master/images/index2.png)
+
+### 1.6 资源列表
+
+````
+    Node列表及配置
+    开启驱逐是配置了一个NoExecute的Taint，禁止调度室配置了一个NoSchedule的Taint，并非强制性的。
+````
+
+![nodeList](https://github.com/dotbalo/ratel-doc/blob/master/images/nodelist.png)
+
+````
+    Deployment StatefulSet DaemonSet列表
+    可以直接进行删除、更新(不更新任何内容触发更新)、编辑、添加Service
+
+    编辑和添加Service目前还在开发中
+````
+
+![stslist](https://github.com/dotbalo/ratel-doc/blob/master/images/stslist.png)
+
+![dslist](https://github.com/dotbalo/ratel-doc/blob/master/images/dslist.png)
+
+![dplist](https://github.com/dotbalo/ratel-doc/blob/master/images/dplist.png)
+
+````
+    Service列表，目前仅支持删除，其他功能仍在开发中。
+````
+
+![svclist](https://github.com/dotbalo/ratel-doc/blob/master/images/svclist.png)
+
+````
+    Pod列表
+````
+
+![podslist](https://github.com/dotbalo/ratel-doc/blob/master/images/podslist.png)
+
 

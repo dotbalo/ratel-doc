@@ -7,7 +7,7 @@
   production: 'false'
   kubeConfigPath: "/mnt/test1.config"
 - serverName: 'test2'
-  serverAddress: 'https://1.1.1.1:8443'
+  serverAddress: 'https://1.1.1.2:8443'
   #serverAdminUser: 'xxx'
   #serverAdminPassword: 'xxx#'
   serverAdminToken: 'null'

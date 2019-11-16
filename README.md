@@ -47,4 +47,21 @@
 
 ### Ratel文档
 
-[1. Ratel安装](https://github.com/dotbalo/ratel-doc/blob/master/cluster/Install.md)
+1. 安装配置
+
+    [1.1 Ratel安装](https://github.com/dotbalo/ratel-doc/blob/master/cluster/Install.md)
+    
+    [1.2 添加集群]((https://github.com/dotbalo/ratel-doc/blob/master/cluster/addCluster.md))
+    
+2. 资源管理
+    
+    [2.1 创建Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-deployment.md)
+    
+    [2.2 创建StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-statefulset.md)
+    
+    [2.3 创建DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-daemonset.md)
+    
+    [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-configmap.md)
+    
+    
+
