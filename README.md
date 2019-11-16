@@ -22,8 +22,8 @@
     而Ratel是用于更方便创建、管理、更新Kubernetes集群中的资源，所有的资源配置都可以通过Web通知台进行配置、创建，无需管理复杂的yaml或json文件，接口轻松实现Kubernetes的资源管理，
     同时Ratel支持多集群的图形化管理，相当于弥补了Kubernetes官方Dashboard的不足。
 
-    比如ConfigMap创建，可以在：
-
+    比如ConfigMap创建，可以在Ratel中直接选择集群和Namespace，然后填入对应的Key和数据即可创建：
+        
     ConfigMap更新
 
 ````
