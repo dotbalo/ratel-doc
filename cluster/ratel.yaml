@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ratel
+  name: ratel
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ratel
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ratel
+    spec:
+      containers:
+        - command:
+            - sh
+            - -c
+            - ./ratel -c /mnt/servers.yaml
+          env:
+            - name: TZ
+              value: Asia/Shanghai
+            - name: LANG
+              value: C.UTF-8
+            - name: ProRunMode
+              value: prod
+            - name: ADMIN_USERNAME
+              value: admin
+            - name: ADMIN_PASSWORD
+              value: ratel_password
+          image: dotbalo/ratel:v0.1alpha
+          imagePullPolicy: Always
+          livenessProbe:
+            failureThreshold: 2
+            initialDelaySeconds: 10
+            periodSeconds: 60
+            successThreshold: 1
+            tcpSocket:
+              port: 8888
+            timeoutSeconds: 2
+          name: ratel
+          ports:
+            - containerPort: 8888
+              name: web
+              protocol: TCP
+          readinessProbe:
+            failureThreshold: 2
+            initialDelaySeconds: 10
+            periodSeconds: 60
+            successThreshold: 1
+            tcpSocket:
+              port: 8888
+            timeoutSeconds: 2
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 520Mi
+            requests:
+              cpu: 100m
+              memory: 100Mi
+          volumeMounts:
+            - mountPath: /mnt
+              name: ratel-config
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+        - name: myregistrykey
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+        - name: ratel-config
+          secret:
+            defaultMode: 420
+            secretName: ratel-config
