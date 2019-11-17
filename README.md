@@ -58,11 +58,11 @@
     
     [2.1 创建Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-deployment.md)
     
-    [2.2 创建StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-statefulset.md)
+    [2.2 创建StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/statefulset/create-statefulset.md)
     
-    [2.3 创建DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-daemonset.md)
+    [2.3 创建DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/daemonset/create-daemonset.md)
     
-    [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-configmap.md)
+    [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/configmap/create-configmap.md)
     
     
-
+#### 更多功能及文档正在完善中...

@@ -193,7 +193,7 @@
 ### 1.5 访问ratel
 
 ````
-    ratel登录页如下:
+    通过Ingress配置的krm.test.com/ratel访问，ratel登录页如下:
 ````
 ![login](https://github.com/dotbalo/ratel-doc/blob/master/images/login.png)
 
