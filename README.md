@@ -66,5 +66,9 @@
     
     [2.5 编辑Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-deployment.md)
     
+    [2.6 编辑DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-daemonset.md)
+    
+    [2.7 编辑StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-statefulset.md)
+    
     
 #### 更多功能及文档正在完善中...

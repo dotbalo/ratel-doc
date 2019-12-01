@@ -11,7 +11,7 @@
           #serverAdminUser: 'xxx'
           #serverAdminPassword: 'xxx#'
           serverAdminToken: 'null'
-          serverDashboardUrl: "https://k8s.xxx.com.cn"
+          serverDashboardUrl: "https://k8s.xxx.com.cn/#"
           production: 'false'
           kubeConfigPath: "/mnt/xxx.config"
         其中管理的方式有两种(Token暂不支持): 
@@ -23,7 +23,7 @@
         serverAdminUser: Kubernetes管理员账号(需要配置basic auth)
         serverAdminPassword: Kubernetes管理员密码
         serverAdminToken: Kubernetes管理员Token // 暂不支持
-        serverDashboardUrl: Kubernetes官方dashboard地址
+        serverDashboardUrl: Kubernetes官方dashboard地址，1.x版本需要添加/#!，2.x需要添加/#
         kubeConfigPath: Kubernetes kube.config路径(绝对路径)
     kubeConfigPath 通过secret挂载到容器的/mnt目录或者其他目录
 
@@ -40,7 +40,7 @@
           #serverAdminUser: 'xxx'
           #serverAdminPassword: 'xxx#'
           serverAdminToken: 'null'
-          serverDashboardUrl: "https://k8s.test1.com.cn"
+          serverDashboardUrl: "https://k8s.test1.com.cn/#"
           production: 'false'
           kubeConfigPath: "/mnt/test1.config"
         - serverName: 'test2'
@@ -48,7 +48,7 @@
           #serverAdminUser: 'xxx'
           #serverAdminPassword: 'xxx#'
           serverAdminToken: 'null'
-          serverDashboardUrl: "https://k8s.test2.com.cn"
+          serverDashboardUrl: "https://k8s.test2.com.cn/#!"
           production: 'false'
           kubeConfigPath: "/mnt/test2.config"
     创建Secret: 
