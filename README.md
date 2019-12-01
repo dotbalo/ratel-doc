@@ -64,5 +64,7 @@
     
     [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/configmap/create-configmap.md)
     
+    [2.5 编辑Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-deployment.md)
+    
     
 #### 更多功能及文档正在完善中...
