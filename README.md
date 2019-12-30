@@ -54,7 +54,7 @@
     
     [1.2 添加集群](https://github.com/dotbalo/ratel-doc/blob/master/cluster/addCluster.md)
     
-2. 资源管理
+2. 创建资源
     
     [2.1 创建Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/create-deployment.md)
     
@@ -64,11 +64,25 @@
     
     [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/configmap/create-configmap.md)
     
-    [2.5 编辑Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-deployment.md)
+    [2.5 创建Service](https://github.com/dotbalo/ratel-doc/blob/master/service/create-service.md)
     
-    [2.6 编辑DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-daemonset.md)
+    [2.6 创建Ingress](https://github.com/dotbalo/ratel-doc/blob/master/ingress/create-ingress.md)
     
-    [2.7 编辑StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-statefulset.md)
+3. 编辑资源
     
+    [3.1 编辑Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-deployment.md)
+    
+    [3.2 编辑DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-daemonset.md)
+    
+    [3.3 编辑StatefulSet](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-statefulset.md)
+    
+    [3.4 编辑Service](https://github.com/dotbalo/ratel-doc/blob/master/service/edit-service.md)
+    
+    [3.5 编辑Ingress](https://github.com/dotbalo/ratel-doc/blob/master/ingress/edit-ingress.md)
+    
+4. 资源复制
+
+    [4.1 资源复制](https://github.com/dotbalo/ratel-doc/blob/master/deployment/copy-resource.md)
+
     
 #### 更多功能及文档正在完善中...
