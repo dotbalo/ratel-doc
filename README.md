@@ -68,6 +68,11 @@
     
     [2.6 创建Ingress](https://github.com/dotbalo/ratel-doc/blob/master/ingress/create-ingress.md)
     
+    [2.7 创建Secret](https://github.com/dotbalo/ratel-doc/blob/master/secret/create-secret.md)
+    
+    [2.8 创建Namespace](https://github.com/dotbalo/ratel-doc/blob/master/namespace/create-namespace.md)
+    
+    
 3. 编辑资源
     
     [3.1 编辑Deployment](https://github.com/dotbalo/ratel-doc/blob/master/deployment/edit-deployment.md)
@@ -79,6 +84,8 @@
     [3.4 编辑Service](https://github.com/dotbalo/ratel-doc/blob/master/service/edit-service.md)
     
     [3.5 编辑Ingress](https://github.com/dotbalo/ratel-doc/blob/master/ingress/edit-ingress.md)
+    
+    [3.6 资源配额管理(ResourceQuota)](https://github.com/dotbalo/ratel-doc/blob/master/namespace/create-rq.md)
     
 4. 资源复制
 
