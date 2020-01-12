@@ -62,13 +62,13 @@
     
     [2.3 创建DaemonSet](https://github.com/dotbalo/ratel-doc/blob/master/daemonset/create-daemonset.md)
     
-    [2.4 创建ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/configmap/create-configmap.md)
+    [2.4 创建和编辑ConfigMap](https://github.com/dotbalo/ratel-doc/blob/master/configmap/create-configmap.md)
     
     [2.5 创建Service](https://github.com/dotbalo/ratel-doc/blob/master/service/create-service.md)
     
     [2.6 创建Ingress](https://github.com/dotbalo/ratel-doc/blob/master/ingress/create-ingress.md)
     
-    [2.7 创建Secret](https://github.com/dotbalo/ratel-doc/blob/master/secret/create-secret.md)
+    [2.7 创建和编辑Secret](https://github.com/dotbalo/ratel-doc/blob/master/secret/create-secret.md)
     
     [2.8 创建Namespace](https://github.com/dotbalo/ratel-doc/blob/master/namespace/create-namespace.md)
     
