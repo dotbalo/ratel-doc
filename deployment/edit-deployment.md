@@ -12,7 +12,7 @@
 ![editdeploymentMetadata1](https://github.com/dotbalo/ratel-doc/blob/master/images/edit-deployment-metadata-1.png)
 ![editdeploymentMetadata2](https://github.com/dotbalo/ratel-doc/blob/master/images/edit-deployment-metadata-2.png)
 ![editdeploymentMetadata3](https://github.com/dotbalo/ratel-doc/blob/master/images/edit-deployment-metadata-3.png)
-
+![editdeploymentAffinity](https://github.com/dotbalo/ratel-doc/blob/master/images/editDeploymentAffinity.png)
 
 
 ### 2.5.2 Volume编辑
@@ -20,8 +20,9 @@
 ![editVolume-1](https://github.com/dotbalo/ratel-doc/blob/master/images/edit-volume-1.png)
 
 ````
-    如上图1所示，编辑Deployment、StatefulSet（storageClass暂不支持更改）或者DaemonSet时，Ratel会自动读取相关Volume配置。
-    对于已经添加的Volume，不支持更改类型，可以删除后重新添加新的。
+    如上图1所示，编辑Deployment、StatefulSet（storageClass暂不支持更改）或者DaemonSet时，
+    Ratel会自动读取相关Volume和Projected Volume配置。
+    可以进行编辑、添加或删除。
     
 ````
 

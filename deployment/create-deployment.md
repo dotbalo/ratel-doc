@@ -8,6 +8,7 @@
 
 ![deploymentMetadata](https://github.com/dotbalo/ratel-doc/blob/master/images/create-deployment.png)
 ![deploymentMetadataKNT](https://github.com/dotbalo/ratel-doc/blob/master/images/kernel-nodeselector-taint.png)
+![deploymentAffinity](https://github.com/dotbalo/ratel-doc/blob/master/images/deploymentAffinity.png)
 
 ````
     Metadata并非Deployment yaml文件中的metadata，此处放置的是一些Deployment的通用配置
@@ -25,7 +26,7 @@
         NodeSelector: 节点选择器，按需修改、添加和删除。
         内核配置: Pod中的内核配置，如上图的第二个图，需要kubelet允许内核配置，按需修改、添加和删除。
         Taint:  如上图的第二个图，容忍配置，，按需修改、添加和删除。
-    
+        Affinity: 如上图的第三个图，亲和力配置，目前支持一键式添加、编辑节点亲和力，将容器按照规则部署至指定节点
         其他参数按需修改。
 
     【为了保证填入数据对的准确性和完整性，填写下一个选项时，必须单击Next，不可以直接按第一个图片的视图选项，所有的均填写完毕后可以直接点击视图选项】
@@ -35,10 +36,12 @@
 
 ![volume](https://github.com/dotbalo/ratel-doc/blob/master/images/volume.png)
 ![stsVolume](https://github.com/dotbalo/ratel-doc/blob/master/images/sts-volume.png)
+![projectedVolume](https://github.com/dotbalo/ratel-doc/blob/master/images/projected-volume.png)
 
 ````
     如上图1所示，目前所支持的Volume配置有HostPath、Secret、ConfigMap、EmptyDir、PVC。
     如上图2所示，目前StatefulSet的Volume配置多了一个StorageClass配置。
+    如上图3所示，Ratel支持一键式Projected类型的volume配置
     上述的Secret、ConfigMap、PVC、StorageClass无需手动输入，单击刷新后即可自动自动获取到当前集群的相关信息。
     其中StorageClass可以直接拖动如图2的申请空间大小来限制申请的动态卷的大小。
 ````
