@@ -91,5 +91,10 @@
 
     [4.1 资源复制](https://github.com/dotbalo/ratel-doc/blob/master/deployment/copy-resource.md)
 
+    [4.2 Namespace复制](https://github.com/dotbalo/ratel-doc/blob/master/namespace/copy-resource.md)
+    
+5. 账号管理
+    
+    [5.1 账号管理](https://github.com/dotbalo/ratel-doc/blob/master/users/users.md)
     
 #### 更多功能及文档正在完善中...

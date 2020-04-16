@@ -44,6 +44,8 @@
     如上图3所示，Ratel支持一键式Projected类型的volume配置
     上述的Secret、ConfigMap、PVC、StorageClass无需手动输入，单击刷新后即可自动自动获取到当前集群的相关信息。
     其中StorageClass可以直接拖动如图2的申请空间大小来限制申请的动态卷的大小。
+    
+    另外提供了额外的Projected Volume，可以按需配置。
 ````
 
 ### 3.3 Container配置
@@ -62,6 +64,8 @@
     健康检查按需配置，目前支持httpGet、tcpSocket、exec方式。
 
     preStop和postStart按需配置。
+    
+    SecurityContext按需配置。
 
     高权限运行是添加privilege=true参数至Container。
 

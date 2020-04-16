@@ -9,3 +9,9 @@
 
 ![createNS](https://github.com/dotbalo/ratel-doc/blob/master/images/createNS.png)
 
+
+````
+    也可以选择性的配置默认的资源请求和限制
+````
+
+![defaultRqLimit](https://github.com/dotbalo/ratel-doc/blob/master/images/defaultRqLimit.png)
