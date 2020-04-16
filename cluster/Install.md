@@ -215,9 +215,8 @@
 
 ````
     Deployment StatefulSet DaemonSet列表
-    可以直接进行删除、更新(不更新任何内容触发更新)、编辑、添加Service
-
-    编辑和添加Service目前还在开发中
+    可以直接进行删除、更新(不更新任何内容触发更新)、编辑、添加Service，自动配置Service端口
+    点击副本数可以直接进行扩容
 ````
 
 ![stslist](https://github.com/dotbalo/ratel-doc/blob/master/images/stslist.png)
@@ -227,13 +226,13 @@
 ![dplist](https://github.com/dotbalo/ratel-doc/blob/master/images/dplist.png)
 
 ````
-    Service列表，目前仅支持删除，其他功能仍在开发中。
+    Service列表，可以针对指定Service添加域名，自动配置端口
 ````
 
 ![svclist](https://github.com/dotbalo/ratel-doc/blob/master/images/svclist.png)
 
 ````
-    Pod列表
+    Pod列表，如果状态不是Running，可以将鼠标放在状态上即可查看出错原因
 ````
 
 ![podslist](https://github.com/dotbalo/ratel-doc/blob/master/images/podslist.png)
