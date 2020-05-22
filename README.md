@@ -72,6 +72,8 @@
     
     [2.8 创建Namespace](https://github.com/dotbalo/ratel-doc/blob/master/namespace/create-namespace.md)
     
+    [2.9 创建pv和pvc](https://github.com/dotbalo/ratel-doc/blob/master/pvpvc/create-pvpvc.md)
+    
     
 3. 编辑资源
     

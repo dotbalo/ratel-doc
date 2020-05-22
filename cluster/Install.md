@@ -14,6 +14,7 @@
           serverDashboardUrl: "https://k8s.xxx.com.cn/#"
           production: 'false'
           kubeConfigPath: "/mnt/xxx.config"
+          harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
         其中管理的方式有两种(Token暂不支持): 
             账号密码和kubeconfig形式, 只需配置一种即可, kubeconfig优先级高
 
@@ -25,6 +26,7 @@
         serverAdminToken: Kubernetes管理员Token // 暂不支持
         serverDashboardUrl: Kubernetes官方dashboard地址，1.x版本需要添加/#!，2.x需要添加/#
         kubeConfigPath: Kubernetes kube.config路径(绝对路径)
+        harborConfig: 对于多集群管理的情况下，可能会存在不同的harbor仓库，配置此参数可以在拷贝资源的时候自动替换harbor配置
     kubeConfigPath 通过secret挂载到容器的/mnt目录或者其他目录
 
     本文档是将Ratel安装在Kubernetes集群，如果没有Kubernetes集群，可以参考本人写的另一篇文章，CentOS 8二进制高可用安装Kubernetes集群: https://www.cnblogs.com/dukuan/p/11780729.html
@@ -43,6 +45,7 @@
           serverDashboardUrl: "https://k8s.test1.com.cn/#"
           production: 'false'
           kubeConfigPath: "/mnt/test1.config"
+          harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
         - serverName: 'test2'
           serverAddress: 'https://1.1.1.2:8443'
           #serverAdminUser: 'xxx'
@@ -51,6 +54,7 @@
           serverDashboardUrl: "https://k8s.test2.com.cn/#!"
           production: 'false'
           kubeConfigPath: "/mnt/test2.config"
+          harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
     创建Secret: 
         kubectl create secret generic ratel-config  --from-file=test1.config --from-file=test2.config --from-file=servers.yaml -n kube-system
 ````
@@ -123,11 +127,11 @@
                     timeoutSeconds: 2
                   resources:
                     limits:
-                      cpu: 1000m
-                      memory: 520Mi
+                      cpu: 500m
+                      memory: 512Mi
                     requests:
-                      cpu: 100m
-                      memory: 100Mi
+                      cpu: 500m
+                      memory: 512Mi
                   volumeMounts:
                     - mountPath: /mnt
                       name: ratel-config
@@ -148,7 +152,7 @@
         ProRunMode: 区别在于dev模式打印的是debug日志, 其他模式是info级别的日志, 实际使用时应该配置为非dev
         ADMIN_USERNAME: ratel自己的管理员账号
         ADMIN_PASSWORD: ratel自己的管理员密码
-        实际使用时账号密码应满足复杂性要求,因为ratel可以直接操作所配置的资源。
+        实际使用时账号密码应满足复杂性要求,因为ratel可以直接操作所有配置的资源。
         其他无需配置, 端口配置暂不支持。
 ````
 

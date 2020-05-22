@@ -13,6 +13,7 @@
               serverDashboardUrl: "https://k8s.test1.com.cn"
               production: 'false'
               kubeConfigPath: "/mnt/test1.config"
+              harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
             - serverName: 'test2'
               serverAddress: 'https://1.1.1.1:8443'
               #serverAdminUser: 'xxx'
@@ -21,6 +22,7 @@
               serverDashboardUrl: "https://k8s.test2.com.cn"
               production: 'false'
               kubeConfigPath: "/mnt/test2.config"
+              harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
         添加test3集群后如下:
             - serverName: 'test1'
               serverAddress: 'https://1.1.1.1:8443'
@@ -30,6 +32,7 @@
               serverDashboardUrl: "https://k8s.test1.com.cn"
               production: 'false'
               kubeConfigPath: "/mnt/test1.config"
+              harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
             - serverName: 'test2'
               serverAddress: 'https://1.1.1.2:8443'
               #serverAdminUser: 'xxx'
@@ -38,6 +41,7 @@
               serverDashboardUrl: "https://k8s.test2.com.cn"
               production: 'false'
               kubeConfigPath: "/mnt/test2.config"
+              harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
             - serverName: 'test3'
               serverAddress: 'https://1.1.1.3:8443'
               #serverAdminUser: 'xxx'
@@ -46,6 +50,7 @@
               serverDashboardUrl: "https://k8s.test3.com.cn"
               production: 'false'
               kubeConfigPath: "/mnt/test3.config"
+              harborConfig: "HarborUrl, HarborUsername, HarborPassword, HarborEmail"
 
     之后热更新原有的Secret:
         kubectl create secret generic  ratel-config --from-file=servers.yaml --from-file=test1.config --from-file=test2.config --from-file=test3.config -n kube-system --dr-run -o yaml | kubectl replace -f -
