@@ -1,4 +1,4 @@
-## 2.6 创建Ingress
+## 2.6 创建Ingress(目前仅支持ingress nginx)
 
 ### 2.6.1 基本说明
 
