@@ -1,4 +1,4 @@
-## 3.5 编辑Service
+## 3.5 编辑Ingress(仅支持ingress nginx)
 
 ### 3.5.1 说明
 
