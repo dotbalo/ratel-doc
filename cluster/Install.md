@@ -102,7 +102,7 @@
                       value: admin
                     - name: ADMIN_PASSWORD
                       value: ratel_password
-                  image: dotbalo/ratel:v0.1beta
+                  image: dotbalo/ratel:v0.2beta
                   imagePullPolicy: Always
                   livenessProbe:
                     failureThreshold: 2
