@@ -54,6 +54,8 @@
 
     之后热更新原有的Secret:
         kubectl create secret generic  ratel-config --from-file=servers.yaml --from-file=test1.config --from-file=test2.config --from-file=test3.config -n kube-system --dr-run -o yaml | kubectl replace -f -
+    
+    也可以使用Ratel直接编辑该Secret
 
     待Kubernetes集群更新Secret后，Ratel会自动加载配置，无需重启。
 ````
