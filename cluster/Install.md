@@ -102,7 +102,7 @@
                       value: admin
                     - name: ADMIN_PASSWORD
                       value: ratel_password
-                  image: dotbalo/ratel:latest
+                  image: registry.cn-beijing.aliyuncs.com/dotbalo/ratel:latest
                   imagePullPolicy: Always
                   livenessProbe:
                     failureThreshold: 2
