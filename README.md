@@ -1,3 +1,18 @@
+# 注意
+````
+  之前的版本写command和args的时候，格式为： sh,,,-c,,,sleep 36000
+  新版写法为：
+  sh,,,
+  -c,,,
+  sleep 36000
+  也就是把换行从,,,改成了,,, + 回车，为了兼容deployment的|+ 和 |-
+  对应的deployment Command为：
+  command:
+  - sh
+  - -c
+  - sleep 36000
+````
+
 ## Kubernetes 一键式资源管理平台
 
 ### Ratel介绍
