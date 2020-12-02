@@ -56,8 +56,16 @@
 ````
     Container配置目前几乎支持所有常见配置，Container的名称会在Deployment名称键入后自动填写一个默认的，可以按需修改。
     点击如图1所示的添加按钮，可以配置多个Container，按需添加、修改和删除。
-    启动命令和启动参数按需修改，逗号分隔，如果启动命令或者启动参数含有逗号，需要以变量的方式传入，比如启动命令是--configEnv=test1,prd
-    此时test1,prd需要配置成变量，如图2的字符变量，之后通过--configEnv=$ConfigEnv注入。
+    启动命令和启动参数按需修改，三个逗号加上回车分隔（为了兼容deployment的|+ 和 |-）。
+    比如：
+    sh,,,
+    -c,,,
+    sleep 36000
+    对应的deployment Command为：
+    command:
+    - sh
+    - -c
+    - sleep 36000
 
     集群的CPU和内存资源按需配置，直接拖动即可。
 
