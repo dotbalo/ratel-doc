@@ -12,7 +12,7 @@
     基于ServiceAccount是推荐的账号管理方式，为了方便开发及测试登录k8s的Dashboard，进行相关操作，目前仅支持如下权限配置
 ````
 
-![serviceAccountPer](https://github.com/dotbalo/ratel-doc/blob/master/images/serviceAccountPer.png)
+![serviceAccountPer](https://github.com/dotbalo/ratel-doc/blob/master/images/serviceAccountPer.jpg)
 
 ````
     和基本认证区别是需要提前创建名为kube-users的namespace：kubectl create ns kube-users
