@@ -320,7 +320,7 @@ metadata:
 kubectl create -f ratel-rbac.yaml
 ````
 
-### 1.3 部署ratel
+### 1.4 部署ratel
 
 ````
     ratel的部署文件内容如下:
@@ -417,9 +417,9 @@ kubectl create -f ratel-rbac.yaml
         其他无需配置, 端口配置暂不支持。
 ````
 
-### 1.4 Service和Ingress配置
+### 1.5 Service和Ingress配置
 
-
+#### 注意：如果没有安装ingress controller，需要把type: ClusterIP改成type: NodePort，然后通过主机IP+Port进行访问
 ````
     创建ratel Service的文件如下:
         apiVersion: v1
@@ -456,8 +456,9 @@ kubectl create -f ratel-rbac.yaml
                 path: /
 ````
 
-### 1.5 访问ratel
+### 1.6 访问ratel
 
+#### 注意：如果没有安装ingress controller，需要把type: ClusterIP改成type: NodePort，然后通过主机IP+Port进行访问
 ````
     通过Ingress配置的krm.test.com/ratel访问，ratel登录页如下:
 ````
@@ -470,7 +471,7 @@ kubectl create -f ratel-rbac.yaml
 ![index](https://github.com/dotbalo/ratel-doc/blob/master/images/index.png)
 ![index2](https://github.com/dotbalo/ratel-doc/blob/master/images/index2.png)
 
-### 1.6 资源列表
+### 1.7 资源列表
 
 ````
     Node列表及配置
