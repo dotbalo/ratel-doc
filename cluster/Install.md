@@ -318,6 +318,24 @@ metadata:
   selfLink: ""
   
 kubectl create -f ratel-rbac.yaml
+
+vim ratel-rbac-binding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: ratel-namespace-readonly-sa
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: ratel-namespace-readonly
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:serviceaccounts:kube-users
+  
+  kubectl create -f ratel-rbac-binding.yaml
+
+
 ````
 
 ### 1.4 部署ratel
