@@ -40,7 +40,7 @@
         serverAdminPassword: Kubernetes管理员密码
         serverAdminToken: Kubernetes管理员Token // 暂不支持
         serverDashboardUrl: Kubernetes官方dashboard地址，1.x版本需要添加/#!，2.x需要添加/#
-        kubeConfigPath: Kubernetes kube.config路径(绝对路径)
+        kubeConfigPath: Kubernetes kube.config路径(绝对路径，这个路径不是宿主机的本地路径，而是1.2小节secret的挂载路径，一般可以不改/mnt)
         harborConfig: 对于多集群管理的情况下，可能会存在不同的harbor仓库，配置此参数可以在拷贝资源的时候自动替换harbor配置
     kubeConfigPath 通过secret挂载到容器的/mnt目录或者其他目录
 
