@@ -19,13 +19,15 @@
 
 #### 1. Ratel是什么？
 ````
-    Ratel是一个Kubernetes资源平台，基于管理Kubernetes的资源开发，
+    Ratel是一个Kubernetes多集群资源管理平台，基于管理Kubernetes的资源开发，
 
-    可以管理Kubernetes的Deployment、DaemonSet、StatefulSet、Service、Ingress、Pods、Nodes。
+    可以管理Kubernetes的Deployment、DaemonSet、StatefulSet、Service、Ingress、Pods、Nodes、CronJob等。
 
     也可以管理Kubernetes的Role、ClusterRole、Rolebinding、ClusterRoleBinding、Secret、ConfigMap、PV、PVC等。
 
     立志于基于图形界面管理所有的Kubernetes的资源。
+    
+    同时具备了一些常用的功能，比如跨集群资源复制、一键项目迁移、图形化资源编辑、资源一键回滚及更新等，并且具备K8s不具备的功能，比如ConfigMap和Secret备份功能。
 ````
 
 #### 2. Ratel和官方Kubernetes-Dashboard什么区别？
