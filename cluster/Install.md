@@ -194,6 +194,15 @@ items:
     - deployments/rollback
     - deployments/scale
     - ingresses
+    - networkpolicies
+    verbs:
+    - patch
+    - update
+  - apiGroups:
+    - networking.k8s.io
+    resources:
+    - ingresses
+    - networkpolicies
     verbs:
     - patch
     - update
@@ -300,6 +309,7 @@ items:
     - networking.k8s.io
     resources:
     - networkpolicies
+    - ingresses
     verbs:
     - get
     - list
