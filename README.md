@@ -119,3 +119,9 @@
     [5.1 账号管理](https://github.com/dotbalo/ratel-doc/blob/master/users/users.md)
     
 #### 更多功能及文档正在完善中...
+
+# 超全面、超详细的Kubernetes视频教程，基于最新K8s进行讲解
+http://www.kubeasy.com/
+
+咨询QQ727585266
+
