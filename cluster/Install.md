@@ -21,7 +21,7 @@
     集群安装配置需要两类文件: servers.yaml和集群管理的kubeconfig文件
     
     servers.yaml是ratel的配置文件, 格式如下:
-        - serverName: 'xiqu'
+        - serverName: 'xxx'
           serverAddress: 'https://1.1.1.1:8443'
           #serverAdminUser: 'xxx'
           #serverAdminPassword: 'xxx#'
