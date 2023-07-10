@@ -1,14 +1,3 @@
-
-# 注意：该项目已不再维护，新版Kubernetes多集群资源平台已经在重构中
-
-新版地址：https://github.com/dotbalo/krm
-
-
-# 注意：该项目已不再维护，新版Kubernetes多集群资源平台已经在重构中
-
-新版地址：https://github.com/dotbalo/krm
-
-
 # 注意：该项目已不再维护，新版Kubernetes多集群资源平台已经在重构中
 
 新版地址：https://github.com/dotbalo/krm
